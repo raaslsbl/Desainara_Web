@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desainara — Jasa Desain Grafis Kreatif Untuk Brand Kamu</title>
+  <meta name="description"
+    content="Jasa desain grafis kreatif, cepat, dan terjangkau untuk UMKM, mahasiswa, dan content creator Indonesia. Dari poster, logo hingga konten sosial media.">
+  <meta name="keywords"
+    content="desain grafis, jasa desain, logo brand, poster digital, feed instagram, desainara, jasa desain murah">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Ambient Lighting -->
+  <div class="ambient-glow glow-top-right"></div>
+  <div class="ambient-glow glow-hero-left"></div>
+  <div class="ambient-glow glow-mid-center"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#" class="brand-logo" id="brand-logo" aria-label="Desainara Home">
+        <img src="assets/logo.png" alt="Desainara Logo" class="brand-icon">
+        <span class="brand-name">Desain<span class="brand-highlight">ara</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" id="desktop-nav">
+        <a href="#hero" class="nav-link">Beranda</a>
+        <a href="#layanan" class="nav-link">Layanan</a>
+        <a href="#keunggulan" class="nav-link">Keunggulan</a>
+        <a href="#cara-order" class="nav-link">Cara Order</a>
+        <a href="https://wa.me/6285276652808?text=Halo%20Desainara,%20saya%20ingin%20konsultasi%20jasa%20desain"
+          target="_blank" rel="noopener noreferrer" class="nav-cta-btn">
+          <img src="assets/icon-wa.svg" alt="" class="btn-icon-svg" width="16" height="16">
+          <span>WhatsApp</span>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="menu-toggle-btn" id="menu-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-drawer-overlay" id="drawer-overlay"></div>
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <img src="assets/logo.png" alt="Desainara Logo" class="brand-icon">
+        <span class="brand-name">Desain<span class="brand-highlight">ara</span></span>
+      </div>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Tutup menu">✕</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#hero" class="drawer-link">Beranda</a>
+      <a href="#layanan" class="drawer-link">Layanan</a>
+      <a href="#keunggulan" class="drawer-link">Mengapa Desainara</a>
+      <a href="#cara-order" class="drawer-link">Cara Pemesanan</a>
+      <a href="#kontak" class="drawer-link">Kontak & Jam Buka</a>
+    </nav>
+    <div class="drawer-footer">
+      <a href="https://wa.me/6285276652808?text=Halo%20Desainara,%20saya%20ingin%20konsultasi%20jasa%20desain"
+        target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full">
+        <img src="assets/icon-wa.svg" alt="" class="btn-icon-svg">
+        <span>Konsultasi WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-radial-glow"></div>
+
+      <div class="container hero-container">
+        <!-- Hero Content (Left / Top) -->
+        <div class="hero-content">
+          <div class="pill-badge hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Jasa Desain Grafis Kreatif</span>
+          </div>
+
+          <h1 class="hero-title">
+            Desain Grafis <span class="text-gradient">Kreatif</span><br>untuk Brand Kamu
+          </h1>
+
+          <p class="hero-description">
+            Cepat, terjangkau, dan berkualitas tinggi. Dari poster, logo hingga konten sosial media — kami siap wujudkan
+            identitas visual impian bisnis kamu.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://wa.me/6285276652808?text=Halo%20Desainara,%20saya%20ingin%20konsultasi%20desain"
+              target="_blank" rel="noopener noreferrer" class="btn btn-primary hero-btn-primary" id="hero-cta-wa">
+              <img src="assets/icon-wa.svg" alt="" class="btn-icon-svg" width="20" height="20">
+              <span>Konsultasi via WhatsApp</span>
+            </a>
+            <a href="#layanan" class="btn btn-outline hero-btn-outline" id="hero-btn-services">
+              <span>Lihat Layanan</span>
+              <img src="assets/icon-arrow-down.svg" alt="" class="btn-icon-svg" width="16" height="16">
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Klien Puas</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number">1000+</div>
+              <div class="stat-label">Desain Selesai</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number">4.9★</div>
+              <div class="stat-label">Rating</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Showcase / Galeri Karya (Right / Bottom) -->
+        <div class="hero-showcase">
+          <div class="showcase-card-wrapper">
+            <!-- Best Seller Badge -->
+            <div class="showcase-floating-badge">
+              <span>Best Seller 🔥</span>
+            </div>
+
+            <!-- Carousel Component -->
+            <div class="carousel-container" id="hero-carousel">
+              <!-- Corner Decorative Accents -->
+              <div class="carousel-corner top-left"></div>
+              <div class="carousel-corner top-right"></div>
+              <div class="carousel-corner bottom-left"></div>
+              <div class="carousel-corner bottom-right"></div>
+
+              <div class="carousel-track" id="carousel-track">
+                <!-- Slide 1 -->
+                <div class="carousel-slide" data-index="0" data-title="Poster Desain Kreatif"
+                  data-time="Selesai dalam 2 hari kerja">
+                  <img src="assets/poster-1.png" alt="Poster Desain Kreatif Desainara" class="slide-img">
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide" data-index="1" data-title="Poster Edukasi Menarik"
+                  data-time="Selesai dalam 2 hari kerja">
+                  <img src="assets/poster-2.png" alt="Poster Edukasi Menarik Desainara" class="slide-img">
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-slide" data-index="2" data-title="Konten Aesthetic & Klasik"
+                  data-time="Selesai dalam 2 hari kerja">
+                  <img src="assets/poster-3.png" alt="Konten Aesthetic & Klasik Desainara" class="slide-img">
+                </div>
+              </div>
+
+              <!-- Slide Navigation Buttons -->
+              <button class="carousel-arrow prev" id="carousel-prev" aria-label="Slide sebelumnya">
+                <img src="assets/icon-prev.svg" alt="Prev" width="20" height="20">
+              </button>
+              <button class="carousel-arrow next" id="carousel-next" aria-label="Slide selanjutnya">
+                <img src="assets/icon-next.svg" alt="Next" width="20" height="20">
+              </button>
+
+              <!-- Slide Info Card Overlay -->
+              <div class="slide-info-card">
+                <div class="slide-info-text">
+                  <h4 class="slide-info-title" id="slide-title">Konten Aesthetic &amp; Klasik</h4>
+                  <p class="slide-info-subtitle" id="slide-subtitle">Selesai dalam 2 hari kerja</p>
+                </div>
+                <div class="slide-status-badge">
+                  <span>✓ Siap Kirim</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dots Indicator -->
+            <div class="carousel-dots" id="carousel-dots">
+              <button class="dot-btn" data-slide="0" aria-label="Slide 1"></button>
+              <button class="dot-btn" data-slide="1" aria-label="Slide 2"></button>
+              <button class="dot-btn active" data-slide="2" aria-label="Slide 3"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION: LAYANAN UNGGULAN KAMI -->
+    <section class="section section-services" id="layanan">
+      <div class="container">
+        <div class="section-header">
+          <div class="pill-badge">
+            <span>Katalog Layanan</span>
+          </div>
+          <h2 class="section-title">Layanan Unggulan Kami</h2>
+          <p class="section-subtitle">
+            Pilih layanan yang kamu butuhkan, harga mulai dari yang terjangkau dengan kualitas kreatif.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Desain Logo Brand -->
+          <div class="service-card">
+            <div class="service-card-image-wrap">
+              <img src="assets/logo desain 3.png" alt="Contoh Desain Logo Brand" class="service-card-img"
+                style="object-position: top;" loading="lazy">
+              <div class="card-badge">New</div>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-name">Desain Logo Brand</h3>
+              <p class="service-desc">
+                Logo sederhana dan kreatif untuk membangun identitas brand atau bisnis kamu secara kuat dan memorable.
+              </p>
+              <div class="service-footer">
+                <div class="service-price-block">
+                  <span class="price-prefix">Mulai dari</span>
+                  <span class="price-value">Rp 20.000</span>
+                </div>
+                <a href="https://wa.me/6285276652808?text=Halo%20Desainara,%20saya%20ingin%20order%20Desain%20Logo%20Brand"
+                  target="_blank" rel="noopener noreferrer" class="btn btn-order">
+                  Order
+                </a>
+              </div>
+              <button type="button" class="btn btn-view-packages" data-service="logo"
+                aria-label="Lihat 3 pilihan Desain Logo Brand">
+                <svg class="btn-pack-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Lihat 3 Pilihan Desain</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: Konten Aesthetic -->
+          <div class="service-card">
+            <div class="service-card-image-wrap">
+              <img src="assets/konten aesthetic 1.png" alt="Contoh Desain Konten Aesthetic" class="service-card-img"
+                style="object-position: top;" loading="lazy">
+              <div class="card-badge">Populer</div>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-name">Konten Aesthetic</h3>
+              <p class="service-desc">
+                Desain konten media sosial yang menarik dan aesthetic untuk story, momen, atau personal branding kamu.
+              </p>
+              <div class="service-footer">
+                <div class="service-price-block">
+                  <span class="price-prefix">Mulai dari</span>
+                  <span class="price-value">Rp 25.000</span>
+                </div>
+                <a href="https://wa.me/6285276652808?text=Halo%20Desainara,%20saya%20ingin%20order%20Desain%20Konten%20Aesthetic"
+                  target="_blank" rel="noopener noreferrer" class="btn btn-order">
+                  Order
+                </a>
+              </div>
+              <button type="button" class="btn btn-view-packages" data-service="konten"
+                aria-label="Lihat 2 pilihan desain Konten Aesthetic">
+                <svg class="btn-pack-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Lihat 2 Pilihan Desain</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3: Poster / Flyer Digital -->
+          <div class="service-card">
+            <div class="service-card-image-wrap">
+              <img src="assets/desain poster.png" alt="Contoh Desain Poster Flyer Digital" class="service-card-img"
+                loading="lazy">
+              <div class="card-badge">Best Seller</div>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-name">Poster / Flyer Digital</h3>
+              <p class="service-desc">
+                Poster atau flyer digital untuk promosi produk, event, atau informasi yang menarik.
+              </p>
+              <div class="service-footer">
+                <div class="service-price-block">
+                  <span class="price-prefix">Mulai dari</span>
+                  <span class="price-value">Rp 20.000</span>
+                </div>
+                <a href="https://wa.me/6285276652808?text=Halo%20Desainara,%20saya%20ingin%20order%20Poster%20Flyer%20Digital"
+                  target="_blank" rel="noopener noreferrer" class="btn btn-order">
+                  Order
+                </a>
+              </div>
+              <button type="button" class="btn btn-view-packages" data-service="poster"
+                aria-label="Lihat 2 pilihan desain Poster / Flyer Digital">
+                <svg class="btn-pack-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Lihat 2 Pilihan Desain</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4: Id Card & Lanyard -->
+          <div class="service-card">
+            <div class="service-card-image-wrap">
+              <img src="assets/paket id card & lanyard.png" alt="Contoh Desain ID Card & Lanyard"
+                class="service-card-img" loading="lazy">
+              <div class="card-badge">Trending</div>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-name">Id Card &amp; Lanyard</h3>
+              <p class="service-desc">
+                Desain ID Card dan lanyard yang rapi untuk kebutuhan organisasi, kepanitiaan, maupun acara.
+              </p>
+              <div class="service-footer">
+                <div class="service-price-block">
+                  <span class="price-prefix">Mulai dari</span>
+                  <span class="price-value">Rp 20.000</span>
+                </div>
+                <a href="https://wa.me/6285276652808?text=Halo%20Desainara,%20saya%20ingin%20order%20Desain%20ID%20Card%20Lanyard"
+                  target="_blank" rel="noopener noreferrer" class="btn btn-order">
+                  Order
+                </a>
+              </div>
+              <button type="button" class="btn btn-view-packages" data-service="idcard"
+                aria-label="Lihat 3 pilihan desain ID Card & Lanyard">
+                <svg class="btn-pack-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Lihat 3 Pilihan Desain</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 5: Mini Ads -->
+          <div class="service-card">
+            <div class="service-card-image-wrap">
+              <img src="assets/mini ads 1.png" alt="Contoh Desain Mini Ads" class="service-card-img" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-name">Mini Ads</h3>
+              <p class="service-desc">
+                Desain video Iklan singkat untuk promosikan produk atau jasa di media sosial.
+              </p>
+              <div class="service-footer">
+                <div class="service-price-block">
+                  <span class="price-prefix">Mulai dari</span>
+                  <span class="price-value">Rp 35.000</span>
+                </div>
+                <a href="https://wa.me/6285276652808?text=Halo%20Desainara,%20saya%20ingin%20order%20Mini%20Ads"
+                  target="_blank" rel="noopener noreferrer" class="btn btn-order">
+                  Order
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Feed Ig -->
+          <div class="service-card">
+            <div class="service-card-image-wrap">
+              <img src="assets/feed ig.png" alt="Contoh Desain Feed Instagram" class="service-card-img" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-name">Feed Ig</h3>
+              <p class="service-desc">
+                Desain feed Instagram eye-catching, siap pakai untuk membuat tampilan konten lebih rapi dan konsisten.
+              </p>
+              <div class="service-footer">
+                <div class="service-price-block">
+                  <span class="price-prefix">Mulai dari</span>
+                  <span class="price-value">Rp 30.000</span>
+                </div>
+                <a href="https://wa.me/6285276652808?text=Halo%20Desainara,%20saya%20ingin%20order%20Desain%20Feed%20Instagram"
+                  target="_blank" rel="noopener noreferrer" class="btn btn-order">
+                  Order
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-cta-wrap">
+          <a href="https://wa.me/6285276652808?text=Halo%20Desainara,%20saya%20ingin%20melihat%20katalog%20semua%20layanan"
+            target="_blank" rel="noopener noreferrer" class="btn-outline-cyan">
+            <span>Lihat Semua Layanan di WhatsApp</span>
+            <img src="assets/icon-external.svg" alt="" class="btn-icon-svg" width="16" height="16">
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION: MENGAPA DESAINARA? -->
+    <section class="section section-why" id="keunggulan">
+      <div class="why-radial-glow"></div>
+      <div class="container">
+        <div class="section-header">
+          <div class="pill-badge">
+            <span>Kenapa Pilih Kami</span>
+          </div>
+          <h2 class="section-title">Mengapa Desainara?</h2>
+        </div>
+
+        <div class="why-grid">
+          <!-- Item 1 -->
+          <div class="why-card">
+            <div class="why-icon-circle">
+              <span class="why-glyph">⟳</span>
+            </div>
+            <h3 class="why-card-title">Revisi Gratis</h3>
+            <p class="why-card-desc">
+              Revisi hingga kamu puas tanpa biaya tambahan. Kepuasan kamu adalah prioritas utama kami.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="why-card">
+            <div class="why-icon-circle">
+              <span class="why-glyph">⚡</span>
+            </div>
+            <h3 class="why-card-title">Pengerjaan Cepat</h3>
+            <p class="why-card-desc">
+              Estimasi selesai 1–4 hari kerja. Express order tersedia untuk kebutuhan mendesak.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="why-card">
+            <div class="why-icon-circle">
+              <span class="why-glyph">◎</span>
+            </div>
+            <h3 class="why-card-title">Harga Transparan</h3>
+            <p class="why-card-desc">
+              Tidak ada biaya tersembunyi. Harga sudah termasuk revisi dan file siap pakai semua format.
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="why-card">
+            <div class="why-icon-circle">
+              <span class="why-glyph">✦</span>
+            </div>
+            <h3 class="why-card-title">500+ Klien Puas</h3>
+            <p class="why-card-desc">
+              Ratusan UMKM, mahasiswa, dan creator telah mempercayakan desain mereka kepada Desainara.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION: 3 LANGKAH MUDAH -->
+    <section class="section section-steps" id="cara-order">
+      <div class="container">
+        <div class="section-header">
+          <div class="pill-badge">
+            <span>Cara Pemesanan</span>
+          </div>
+          <h2 class="section-title">3 Langkah Mudah</h2>
+          <p class="section-subtitle">
+            Order desain impianmu semudah chat ke teman
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-number-circle">
+              <span>01</span>
+            </div>
+            <h3 class="step-card-title">Pilih Layanan</h3>
+            <p class="step-card-desc">
+              Pilih layanan desain yang kamu butuhkan dari katalog kami. Atau boleh tanya-tanya dahulu jika bingung.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-number-circle">
+              <span>02</span>
+            </div>
+            <h3 class="step-card-title">Chat WhatsApp</h3>
+            <p class="step-card-desc">
+              Klik tombol WA, langsung terhubung ke tim desainer kami.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-number-circle">
+              <span>03</span>
+            </div>
+            <h3 class="step-card-title">Bahas &amp; Bayar</h3>
+            <p class="step-card-desc">
+              Diskusikan brief, timeline, dan lakukan pembayaran. Desain kamu dikerjakan!
+            </p>
+          </div>
+        </div>
+
+        <div class="steps-cta-wrap">
+          <a href="https://wa.me/6285276652808?text=Halo%20Desainara,%20saya%20ingin%20mulai%20order%20desain"
+            target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large-cta">
+            <img src="assets/icon-wa.svg" alt="" class="btn-icon-svg" width="20" height="20">
+            <span>Mulai Order Sekarang</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="kontak">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-col brand-col">
+          <div class="brand-logo footer-brand">
+            <img src="assets/logo.png" alt="Desainara Logo" class="brand-icon">
+            <span class="brand-name">Desain<span class="brand-highlight">ara</span></span>
+          </div>
+          <p class="footer-bio">
+            Jasa desain grafis kreatif, cepat, dan terjangkau untuk UMKM, mahasiswa, dan content creator Indonesia.
+          </p>
+          <div class="footer-rating-box">
+            <div class="stars-row">
+              <img src="assets/icon-star.svg" alt="Star" class="star-icon" width="14" height="14">
+              <img src="assets/icon-star.svg" alt="Star" class="star-icon" width="14" height="14">
+              <img src="assets/icon-star.svg" alt="Star" class="star-icon" width="14" height="14">
+              <img src="assets/icon-star.svg" alt="Star" class="star-icon" width="14" height="14">
+              <img src="assets/icon-star.svg" alt="Star" class="star-icon" width="14" height="14">
+            </div>
+            <span class="rating-text">4.9/5 dari 500+ klien</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Hubungi Kami -->
+        <div class="footer-col contact-col">
+          <h4 class="footer-heading">Hubungi Kami</h4>
+          <div class="contact-list">
+            <a href="https://wa.me/6285276652808" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <div class="contact-icon-box">
+                <img src="assets/icon-wa-contact.svg" alt="WhatsApp" width="16" height="16">
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">WhatsApp</span>
+                <span class="contact-val">+62 852-7665-2808</span>
+              </div>
+            </a>
+            <a href="https://instagram.com/desainara.offc" target="_blank" rel="noopener noreferrer"
+              class="contact-item">
+              <div class="contact-icon-box">
+                <img src="assets/icon-ig.svg" alt="Instagram" width="16" height="16">
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Instagram</span>
+                <span class="contact-val">@desainara.offc</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 3: Jam Operasional -->
+        <div class="footer-col hours-col">
+          <h4 class="footer-heading">Jam Operasional</h4>
+          <div class="hours-list">
+            <div class="hours-row">
+              <span class="hours-day">Senin – Jumat</span>
+              <span class="hours-time">08.00 – 21.00 WIB</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Sabtu</span>
+              <span class="hours-time">09.00 – 18.00 WIB</span>
+            </div>
+          </div>
+          <div class="status-indicator">
+            <span class="status-live-dot"></span>
+            <span class="status-text">Sedang aktif</span>
+          </div>
+          <div class="location-row">
+            <img src="assets/icon-location.svg" alt="Location" width="14" height="14">
+            <span>Medan, Indonesia</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 Desainara. Semua hak dilindungi.</p>
+        <p class="tagline">Desain kreatif untuk brand impianmu.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- MODAL PILIHAN PAKET LAYANAN -->
+  <div class="package-modal-overlay" id="package-modal-overlay" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="modal-service-title">
+    <div class="package-modal-container">
+      <div class="package-modal-header">
+        <div class="package-modal-header-info">
+          <span class="modal-badge">Pilihan Desain Spesial</span>
+          <h3 class="package-modal-title" id="modal-service-title">Nama Layanan</h3>
+          <p class="package-modal-subtitle" id="modal-service-desc">Pilih paket desain yang sesuai dengan kebutuhan dan
+            target promosi kamu.</p>
+        </div>
+        <button class="package-modal-close" id="package-modal-close" aria-label="Tutup modal pilihan desain">✕</button>
+      </div>
+
+      <div class="package-modal-body" id="modal-package-list">
+        <!-- Paket mini cards akan dimuat secara dinamis via JavaScript -->
+      </div>
+
+      <div class="package-modal-footer">
+        <div class="package-modal-footer-note">
+          <span class="note-icon">✨</span>
+          <span>Semua paket sudah termasuk konsultasi, revisi gratis &amp; file resolusi tinggi siap pakai.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/6285276652808?text=Halo%20Desainara,%20saya%20ingin%20konsultasi%20desain" target="_blank"
+    rel="noopener noreferrer" class="floating-wa-btn" id="floating-wa-btn" aria-label="Chat via WhatsApp">
+    <img src="assets/icon-float-wa.svg" alt="WhatsApp" class="floating-wa-icon" width="26" height="26">
+    <span class="floating-tooltip">Chat Kami</span>
+  </a>
+
+  <!-- JS Logic -->
+  <script src="script.js"></script>
+</body>
+
+</html>
