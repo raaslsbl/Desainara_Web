@@ -1687,13 +1687,15 @@ body {
   margin-bottom: 16px;
 }
 
-.status-live-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #22c55e;
-  box-shadow: 0 0 6px #22c55e;
-  animation: pulseGreen 2s infinite ease-in-out;
+.status-live-dot.offline {
+  background-color: #6b7280;
+  /* abu-abu saat tutup */
+  animation: none;
+  /* kalau ada animasi berkedip, matikan saat offline */
+}
+
+.status-text.offline-text {
+  color: #6b7280;
 }
 
 @keyframes pulseGreen {

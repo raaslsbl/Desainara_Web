@@ -414,3 +414,39 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+function updateJamOperasional() {
+  const now = new Date();
+  const hour = now.getHours();
+  const minute = now.getMinutes();
+  const day = now.getDay(); // 0=Minggu, 1=Senin, ..., 6=Sabtu
+  const currentMinutes = hour * 60 + minute;
+
+  let isOpen = false;
+
+  if (day >= 1 && day <= 5) {
+    // Senin - Jumat: 08.00 - 21.00
+    isOpen = currentMinutes >= (8 * 60) && currentMinutes < (21 * 60);
+  } else if (day === 6) {
+    // Sabtu: 09.00 - 18.00
+    isOpen = currentMinutes >= (9 * 60) && currentMinutes < (18 * 60);
+  } else {
+    // Minggu: libur (ubah kalau ternyata buka)
+    isOpen = false;
+  }
+
+  const dot = document.getElementById('statusDot');
+  const text = document.getElementById('statusText');
+
+  if (isOpen) {
+    dot.classList.remove('offline');
+    text.classList.remove('offline-text');
+    text.textContent = 'Sedang aktif';
+  } else {
+    dot.classList.add('offline');
+    text.classList.add('offline-text');
+    text.textContent = 'Sedang tidak aktif';
+  }
+}
+
+updateJamOperasional();
+setInterval(updateJamOperasional, 60000); // cek ulang tiap 1 menit
