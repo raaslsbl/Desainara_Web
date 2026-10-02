@@ -601,6 +601,24 @@ body {
   margin: 0 auto;
 }
 
+.section-promo-video {
+  padding: 60px 0;
+}
+
+.promo-video-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.promo-video-wrapper video {
+  width: 100%;
+  height: 50%;
+  display: block;
+}
+
 .showcase-card-wrapper {
   position: relative;
   padding: 6px;
