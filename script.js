@@ -52,10 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const nextBtn = document.getElementById('carousel-next');
   const slideTitle = document.getElementById('slide-title');
   const slideSubtitle = document.getElementById('slide-subtitle');
-  const carouselVideo = document.getElementById('carouselVideo');
-  const heroSoundBtn = document.getElementById('heroSoundBtn');
 
-  let currentSlide = 0; // video iklan tampil duluan
+  let currentSlide = 0;
   let slideInterval = null;
   const slideCount = slides.length;
 
@@ -63,18 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (index < 0) index = slideCount - 1;
     if (index >= slideCount) index = 0;
     currentSlide = index;
-    // Kontrol video: play kalau slide video aktif, pause kalau bukan
-    if (carouselVideo) {
-      if (index === 0) {
-        carouselVideo.currentTime = 0;
-        carouselVideo.muted = true;
-        carouselVideo.play().catch(() => { });
-        if (heroSoundBtn) heroSoundBtn.style.display = 'flex';
-      } else {
-        carouselVideo.pause();
-        if (heroSoundBtn) heroSoundBtn.style.display = 'none';
-      }
-    }
 
     // Slide track horizontally
     if (carouselTrack) {
@@ -116,13 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize position
   updateSlide(currentSlide);
 
-  if (heroSoundBtn) {
-    heroSoundBtn.addEventListener('click', () => {
-      carouselVideo.muted = false;
-      heroSoundBtn.style.display = 'none';
-    });
-  }
-
   const nextSlide = () => {
     updateSlide(currentSlide + 1);
   };
@@ -130,13 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const prevSlide = () => {
     updateSlide(currentSlide - 1);
   };
-  // Setelah video selesai, lanjut ke slide berikutnya
-  if (carouselVideo) {
-    carouselVideo.addEventListener('ended', () => {
-      nextSlide();
-      resetAutoplay();
-    });
-  }
 
   if (nextBtn) {
     nextBtn.addEventListener('click', () => {
@@ -161,11 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Autoplay functionality
   const startAutoplay = () => {
-    // Saat slide video aktif, jangan pasang interval 4.5 detik —
-    // biarkan event 'ended' yang menentukan kapan pindah slide
-    if (currentSlide === 0 && carouselVideo) {
-      return;
-    }
     slideInterval = setInterval(nextSlide, 4500);
   };
 

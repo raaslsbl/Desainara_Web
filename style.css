@@ -708,14 +708,6 @@ body {
   padding: 12px;
 }
 
-.carousel-video {
-  width: 70%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
-
 .hero-sound-btn {
   position: absolute;
   top: 12px;
@@ -2075,6 +2067,7 @@ body {
     opacity: 0.55;
     transform: translate(-50%, -50%) scale(0.96);
   }
+
   100% {
     opacity: 0.9;
     transform: translate(-50%, -50%) scale(1.04);
@@ -2129,6 +2122,7 @@ body {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-7px);
   }
@@ -2301,10 +2295,11 @@ body {
     font-size: 11px;
     padding: 6px 10px;
   }
+
   .badge-bottom-left {
     left: -4px;
     bottom: 16px;
     font-size: 11px;
     padding: 6px 10px;
   }
-}
+}
